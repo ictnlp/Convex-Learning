@@ -1,9 +1,8 @@
-exp=your_exp_name
-data_dir=/path/to/binarized_dataset
-checkpoint_dir=./checkpoints/$exp
-plugin_path=/path/to/convex_learning_plugin
-mle_pretrain_model=/path/to/pretrain_model
-convex_order=1
+data_dir=wmt14_ende_bin
+exp=at_convex
+checkpoint_dir=checkpoints/$exp
+plugin_path=Convex-Learning
+mle_pretrain_model=checkpoints/at
 
 nohup fairseq-train $data_dir \
     --user-dir ${plugin_path} \

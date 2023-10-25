@@ -1,8 +1,8 @@
-data_dir=/path/to/binarized_dataset
+data_dir=wmt14_ende_bin
 exp=vanilla_convex
-checkpoint_dir=./checkpoints/$exp
+checkpoint_dir=checkpoints/$exp
 plugin_path=Convex-Learning
-mle_pretrain_model=./checkpoints/vanilla
+mle_pretrain_model=checkpoints/vanilla
 length_factor=0.01
 convex_order=3
 

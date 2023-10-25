@@ -1,7 +1,7 @@
-exp=your_exp_name
-data_dir=/path/to/binarized_dataset
+data_dir=wmt14_ende_bin
+exp=cmlm
 checkpoint_dir=./checkpoints/$exp
-plugin_path=/path/to/convex_learning_plugin
+plugin_path=Convex-Learning
 
 nohup fairseq-train $data_dir \
     --user-dir ${plugin_path} \

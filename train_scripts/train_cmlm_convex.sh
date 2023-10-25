@@ -1,8 +1,8 @@
-exp=your_exp_name
-data_dir=/path/to/binarized_dataset
-checkpoint_dir=./checkpoints/$exp
-plugin_path=/path/to/convex_learning_plugin
-mle_pretrain_model=/path/to/pretrain_model
+data_dir=wmt14_ende_bin
+exp=cmlm_convex
+checkpoint_dir=checkpoints/$exp
+plugin_path=Convex-Learning
+mle_pretrain_model=checkpoints/cmlm
 length_factor=0.01
 convex_order=3
 
