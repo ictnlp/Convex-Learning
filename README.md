@@ -48,7 +48,7 @@ unzip original_dataset.zip
 input_dir=./wmt14_ende        # directory of pre-processed text data
 data_dir=./wmt14_ende_bin   # directory of the generated binarized data
 
-fairseq-datpreprocess --source-lang en --target-lang de \
+fairseq-preprocess --source-lang en --target-lang de \
     --trainpref ${input_dir}/train.en-de \
     --validpref ${input_dir}/valid.en-de \
     --testpref ${input_dir}/test.en-de \
