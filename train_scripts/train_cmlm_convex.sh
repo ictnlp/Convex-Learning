@@ -1,8 +1,8 @@
 data_dir=wmt14_ende_bin
 exp=cmlm_convex
 checkpoint_dir=checkpoints/$exp
-plugin_path=Convex-Learning
-mle_pretrain_model=checkpoints/cmlm
+plugin_path=convex-learning
+mle_pretrain_model=checkpoints/cmlm/checkpoint_last.pt
 length_factor=0.01
 convex_order=3
 

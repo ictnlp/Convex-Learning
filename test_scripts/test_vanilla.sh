@@ -1,6 +1,6 @@
 data_dir=wmt14_ende_bin
 checkpoint_path=checkpoints/vanilla_convex
-plugin_path=Convex-Learning
+plugin_path=convex-learning
 
 fairseq-generate ${data_dir} \
     --user-dir ${plugin_path} \

@@ -1,8 +1,8 @@
 data_dir=wmt14_ende_bin
 exp=ctc_convex
 checkpoint_dir=checkpoints/$exp
-plugin_path=Convex-Learning
-mle_pretrain_model=checkpoints/ctc
+plugin_path=convex-learning
+mle_pretrain_model=checkpoints/ctc/checkpoint_last.pt
 convex_order=3
 
 nohup fairseq-train $data_dir \

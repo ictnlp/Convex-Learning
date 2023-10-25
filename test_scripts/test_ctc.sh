@@ -1,6 +1,6 @@
 data_dir=wmt14_ende_bin
 checkpoint_path=checkpoints/ctc_convex
-plugin_path=Convex-Learning
+plugin_path=convex-learning
 
 
 python ${plugin_path}/scripts/generate_ctc.py ${data_dir} \

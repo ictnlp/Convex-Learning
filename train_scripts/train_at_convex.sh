@@ -1,8 +1,8 @@
 data_dir=wmt14_ende_bin
 exp=at_convex
 checkpoint_dir=checkpoints/$exp
-plugin_path=Convex-Learning
-mle_pretrain_model=checkpoints/at
+plugin_path=convex-learning
+mle_pretrain_model=checkpoints/at/checkpoint_last.pt
 
 nohup fairseq-train $data_dir \
     --user-dir ${plugin_path} \
