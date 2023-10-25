@@ -1,8 +1,8 @@
-exp=your_exp_name
+exp=vanilla_convex
 data_dir=/path/to/binarized_dataset
 checkpoint_dir=./checkpoints/$exp
 plugin_path=/path/to/convex_learning_plugin
-mle_pretrain_model=/path/to/pretrain_model
+mle_pretrain_model=./checkpoints/vanilla
 length_factor=0.01
 convex_order=3
 
