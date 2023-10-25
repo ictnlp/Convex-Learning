@@ -1,6 +1,6 @@
 data_dir=wmt14_ende_bin
 exp=cmlm
-checkpoint_dir=./checkpoints/$exp
+checkpoint_dir=checkpoints/$exp
 plugin_path=Convex-Learning
 
 nohup fairseq-train $data_dir \
