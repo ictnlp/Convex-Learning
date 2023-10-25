@@ -3,7 +3,7 @@ data_dir=/path/to/binarized_dataset
 checkpoint_dir=./checkpoints/$exp
 plugin_path=/path/to/convex_learning_plugin
 mle_pretrain_model=/path/to/pretrain_model
-convex_order=3
+convex_order=1
 
 nohup fairseq-train $data_dir \
     --user-dir ${plugin_path} \
