@@ -88,7 +88,7 @@ class CustomTrainer(Trainer):
 
         lprobs = torch.nn.functional.log_softmax(logits, dim = -1)
         batch_size, length, vocab_size = lprobs.size()
-        padding_mask = labels.eq(-100).view(batch_size, length)
+        padding_mask = labels.eq(IGNORE_INDEX).view(batch_size, length)
         labels = torch.clamp(labels, min=0)
         tgt_lprob = lprobs.gather(dim=-1, index=labels.unsqueeze(-1)).view(batch_size, length)
         tgt_length = torch.sum(~padding_mask, dim = -1)
