@@ -20,7 +20,7 @@ fi
 
 model_name=llama_7b_convex
 train_path=train/run_convex.py 
-premodel=llama_7b_pre
+premodel=/path/to/llama
 model_save=checkpoints/$model_name
 LOG_FILE=checkpoints/log.${model_name}
 
