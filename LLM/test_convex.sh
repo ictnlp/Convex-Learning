@@ -20,7 +20,7 @@ if [ ! -d $result_dir ]; then
     chmod 777 $result_dir -R
 fi
 
-export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 export TRANSFORMERS_CACHE=train/cache/
 export HF_HOME=train/cache/
 export TF_ENABLE_ONEDNN_OPTS=0
