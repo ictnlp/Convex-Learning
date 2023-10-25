@@ -33,7 +33,7 @@ TOKENIZERS_PARALLELISM=false
 HOST_NUM=1
 INDEX=0
 
-train_files=train/alpaca.json
+train_files=train/data_alpaca_gpt4_hf_en.json
 python -u -m torch.distributed.launch --nproc_per_node $gpu_num --master_port=$MASTER_PORT  --use_env \
     ${train_path} \
     --deepspeed train/deepspeed/deepspeed_config_zero3.json \
