@@ -10,7 +10,7 @@ nohup fairseq-train $data_dir \
     --task translation \
     --criterion label_smoothed_cross_entropy --left-pad-source \
     --arch transformer_wmt_en_de --share-all-embeddings \
-    --convex-order ${convex_order} --label-smoothing 0.1 --dropout 0.1 \
+    --label-smoothing 0.1 --dropout 0.1 \
     --optimizer adam  --adam-betas '(0.9, 0.98)' --clip-norm 0.0 \
     --lr-scheduler inverse_sqrt --warmup-init-lr '1e-07' --warmup-updates 4000 \
     --lr 0.0007 --stop-min-lr '1e-09' \
