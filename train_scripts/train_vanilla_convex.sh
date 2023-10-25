@@ -1,7 +1,7 @@
-exp=vanilla_convex
 data_dir=/path/to/binarized_dataset
+exp=vanilla_convex
 checkpoint_dir=./checkpoints/$exp
-plugin_path=/path/to/convex_learning_plugin
+plugin_path=Convex-Learning
 mle_pretrain_model=./checkpoints/vanilla
 length_factor=0.01
 convex_order=3
